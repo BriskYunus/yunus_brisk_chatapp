@@ -14,7 +14,15 @@ function runDisconnectMessage(packet) {
 }
 
 function appendNewMessage(msg) {
+    // adds audio when new message
+    let audio = new Audio('../audio/alert.mp3');
+    // plays audio when two connections are in app
     vm.messages.push(msg);
+    // locks sound to play only when new message revieved, won't replay
+    if(msg.id != vm.socketID){
+        audio.play();
+    }
+
 }
 
 // this is our main Vue instance

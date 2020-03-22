@@ -11,13 +11,14 @@
 <body>
 	<main id="app">
 		<section class="form-container">
-			<label for="nickname">Your Nickname (optional)</label>
-			<input type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+			<img src="images/logo.svg" width="400" height="160" class="logo" type="image/svg+xml">
+			<label for="nickname">Enter Your Name Here</label>
+			<input v-model="nickName" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 
 			<form>
-				<label for="message">Something to say?</label>
+				<label for="message">What's your message?</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input @click.prevent="dispatchMessage" type="submit">
+				<input class="button" @click.prevent="dispatchMessage" type="submit" value="Send">
 			</form>
 		</section>
 
