@@ -5,7 +5,7 @@
 ## Runs with Socket.io and available on all broswers.
 ## Changes include
 1. Nickname working
-2. "ChatWave" Colors and theme
-3. Audio effect when message appears
+2. "ChatWave" colours and theme
+3. Audio effect when messages appears across browsers
 
-### Launch the app with "npm start" and run the localhost through broswer.
+### Launch the app with "npm start" and run the localhost through browser.
